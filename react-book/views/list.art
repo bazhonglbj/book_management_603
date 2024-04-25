@@ -5,6 +5,13 @@
     <title>template</title>
 </head>
 <body>
-    <div></div>
+    <div>{{title}}</div>
+    <div>
+    <ul>
+        {{each list}}
+            <li>{{$value}}</li>
+        {{each}}
+    </ul>
+    </div>
 </body>
 </html>

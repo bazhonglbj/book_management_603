@@ -11,7 +11,12 @@ app.set('view engine', 'art');
 app.engine('art', require('express-art-template'));
 
 app.get('/list', (req, res) => {
-  
+  let data = {
+    title:"shuiguo",
+    list: ['apple', 'banana', 'orange']
+  }
+  //参数1 模板名称 参数2 数据
+  res.render('list',data)
 });
 
 app.listen(3000, () => {
